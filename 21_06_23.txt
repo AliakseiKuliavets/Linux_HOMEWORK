@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+#date
+
+#USER="Aliaksei"
+
+#echo "hello $USER!"
+
+#pwd
+
+
+# or
+
+date
+
+whoami=USER
+
+echo "hello $USER"
+
+pwd
