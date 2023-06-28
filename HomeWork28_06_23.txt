@@ -1,0 +1,18 @@
+
+#!/bin/bash
+
+mkdir -p /opt/090523_morning/Aliaksei_Kuliavets/Homework
+
+for run in {1..10}
+do
+date +“%H:%M:%S”
+sleep 0.2
+done
+ps -ef | wc -l
+
+touch /opt/090523_morning/Aliaksei_Kuliavets/Homework/123.txt
+
+lscpu > /opt/090523_morning/Aliaksei_Kuliavets/Homework/123.txt
+uname >> /opt/090523_morning/Aliaksei_Kuliavets/Homework/123.txt
+
+touch /opt/090523_morning/Aliaksei_Kuliavets/Homework/{50..100}.txt
