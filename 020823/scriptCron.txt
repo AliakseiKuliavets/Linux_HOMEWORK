@@ -1,0 +1,36 @@
+1 уровень сложности: 1 Скрипт должен создавать по 10 файлов с порядковым номером и датой создания. 
+120.04.23 , 220.04.23 , 320.04.23 .. 1020.04.23
+2 Создайте в планировщике новое задание, которое должно будет запускать Ваш скрипт каждые 15 минут.
+
+Работайте в ваших рабочих папках.
+
+
+Что пригодится:
+date +"%d.%m.%y"
+touch
+export EDITOR=nano
+crontab -l
+crontab -e
+Crontab.guru
+
+
+Если удобно, то вот однострочник, создающий простейший скрипт в /tmp , который надо будет редактировать дальше:
+echo -e #!/bin/bash\n date\n echo “it works!“ > /tmp/script.sh
+
+
+
+
+
+Всем удачи и успехов в дальнейшем обучении!
+
+#!/bin/bash
+mkdir -p /opt/090523_morning/Aliaksei_Kuliavets/newDir
+
+date_now=$(date +"%y.%m.%d")
+
+ for run in {1..10}
+ do
+ touch /opt/090523_morning/Aliaksei_Kuliavets/newDir/${run}${date_now}.txt
+ done
+echo "DONE"
+
